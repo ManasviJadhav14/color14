@@ -1,0 +1,38 @@
+<html>
+   <head>
+        <title>Color app by kamal sir</title>
+        <style>
+                *{font-size:50px;font-family:cambria;}
+                 body{background-color:azure;}
+        </style>
+   </head>
+   <body>
+       <center>
+             <h1>color app</h1>
+             <form onsubmit="color()">
+              <input type="submit"value="red"/>
+              <input type="submit"value="green"/>
+              <input type="submit"value="blue"/>
+             </form>
+             <script>
+                  function color()
+                  {
+                       event.preventDefault();
+                       let action=document.activeElement.value;
+                       if(action==="red")
+                       {
+                           document.body.style.backgroundColor="red";
+                        }
+                       if(action==="green")
+                       {
+                           document.body.style.backgroundColor="green";
+                        }
+                       if(action==="blue")
+                       {
+                           document.body.style.backgroundColor="blue";
+                        }
+                  }
+             </script>
+       </center>  
+   </body>
+</html>
